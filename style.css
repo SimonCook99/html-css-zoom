@@ -4,15 +4,24 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 .flex{
     display: flex;
 }
 
 /* inizio sezione header*/
 header{
+    width: 100%;
     justify-content: flex-end;
     height: 80px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .button{
@@ -25,7 +34,7 @@ header{
     padding: 10px;
 }
 
-.button.speaker i{
+.button.speaker i, .user-information i{
     margin-right: 5px;
 }
 
@@ -34,6 +43,9 @@ header{
 .main-container{
     flex-wrap: wrap;
     background-color: black;
+    margin: auto;
+    margin-top: 80px;
+    justify-content: center;
 }
 
 .user{
@@ -49,4 +61,46 @@ header{
     position: absolute;
     bottom: 4px;
     left: 0;
+}
+
+/* inizio footer*/
+footer{
+    background-color: #1f1f1f;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+footer .audio-settings{
+    margin-left: 20px;
+}
+
+footer .mic, footer .video{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+footer .fa-chevron-up{
+    font-size: 15px;
+    justify-content: center;
+    position: relative;
+    left: 40px;
+    bottom: 40px;
+}
+
+
+footer .end-meeting{
+    background-color: #414141;
+    color: red;
+    height: 100%;
+    align-items: center;
 }
