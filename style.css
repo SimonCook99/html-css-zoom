@@ -12,6 +12,7 @@ body{
     display: flex;
 }
 
+
 /* inizio sezione header*/
 header{
     width: 100%;
@@ -84,9 +85,7 @@ footer .audio-settings{
 footer .mic, footer .video{
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px;
+    margin: 20px 20px 0px 20px;
 }
 
 footer .fa-chevron-up{
@@ -97,10 +96,33 @@ footer .fa-chevron-up{
     bottom: 40px;
 }
 
+footer .main-settings{
+    justify-content: center;
+    align-items: center;
+}
+
+footer .main-settings div{
+    margin: 0 10px;
+}
+
+/* colorazione diversa per presentazione schermo*/
+i.fa-share-square{
+    color: greenyellow;
+}
+
+/* centralizzazione delle icone tramite classe apposita*/
+i.center{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 
 footer .end-meeting{
     background-color: #414141;
     color: red;
     height: 100%;
     align-items: center;
+    padding: 0 20px;
 }
+
